@@ -16,7 +16,7 @@ jobs:
       - name: Upload to release
         uses: JasonEtco/upload-to-release@master
         with:
-          args: RPMS/x86_64/my-1.0.0-0.x86_64.rpm
+          args: RPMS/x86_64/my-1.0.0-0.x86_64.rpm application/octet-stream
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 #       - name: Upload math result for job 1
